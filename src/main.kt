@@ -11,7 +11,7 @@ fun main () {
     val result = a + b
     val outLine = File("./src/output.txt")
     outLine.writeText(result.toString()) //записали в файл
-
+    println("ну здарсте")
 }
 
 
