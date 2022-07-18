@@ -1,5 +1,5 @@
 
-val scan = java.util.Scanner(System.`in`)
+val scan = java.util.Scanner(System.`in`).useLocale(java.util.Locale.US)
 fun main () {
 
     //****************************************************************************************************************
