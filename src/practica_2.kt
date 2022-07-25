@@ -78,14 +78,14 @@ fun main () {
     val countMembersFamaly = scan.nextInt()
     val ticket = 100000
     val salaryForOneMembers = (salaryFather+salaryMother)/countMembersFamaly
-    print (when {
-        salaryForOneMembers >= 20000 -> 0
-        salaryForOneMembers < 12000 -> ticket*0.4
-        salaryForOneMembers < 16000 -> ticket*0.3
-        salaryForOneMembers < 18000 -> ticket*0.2
-        salaryForOneMembers < 20000 -> ticket*0.1
-        else -> ticket*0.5
-    }.toInt())
+    var discount = 0.0
+    if (salaryForOneMembers >= 20000) discount
+    else if (salaryForOneMembers in 18000..19999) discount = ticket*0.1/countMembersFamaly
+    else if (salaryForOneMembers in 16000..17999) discount = ticket*0.2/countMembersFamaly
+    else if (salaryForOneMembers in 12000..15999) discount = ticket*0.3/countMembersFamaly
+    else if (salaryForOneMembers in 10000..11999) discount = ticket*0.4/countMembersFamaly
+    else ticket*0.5/countMembersFamaly
+    print (discount.toInt())
 
     //***********************************************************************************************************
 
