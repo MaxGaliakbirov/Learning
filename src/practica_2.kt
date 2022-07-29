@@ -73,20 +73,35 @@ fun main () {
     //40%, если з/п в месяц на одного члена семьи < 12000 руб
     //50%, если з/п в месяц на одного члена семьи < 10000 руб
 
-    val salaryMother = scan.nextInt()
-    val salaryFather = scan.nextInt()
-    val countMembersFamaly = scan.nextInt()
-    val ticket = 100000
-    val salaryForOneMembers = (salaryFather+salaryMother)/countMembersFamaly
-    var discount = 0.0
-    if (salaryForOneMembers >= 20000) discount
-    else if (salaryForOneMembers in 18000..19999) discount = ticket*0.1/countMembersFamaly
-    else if (salaryForOneMembers in 16000..17999) discount = ticket*0.2/countMembersFamaly
-    else if (salaryForOneMembers in 12000..15999) discount = ticket*0.3/countMembersFamaly
-    else if (salaryForOneMembers in 10000..11999) discount = ticket*0.4/countMembersFamaly
-    else ticket*0.5/countMembersFamaly
-    print (discount.toInt())
+//    val salaryMother = scan.nextInt()
+//    val salaryFather = scan.nextInt()
+//    val countMembersFamaly = scan.nextInt()
+//    val ticket = 100000
+//    val salaryForOneMembers = (salaryFather+salaryMother)/countMembersFamaly
+//    print (when {
+//        salaryForOneMembers >= 20000 -> 0
+//        salaryForOneMembers < 10000 -> ticket*0.5
+//        salaryForOneMembers < 12000 -> ticket*0.4
+//        salaryForOneMembers < 16000 -> ticket*0.3
+//        salaryForOneMembers < 18000 -> ticket*0.2
+//        else -> ticket*0.1
+//    }.toInt())
 
+    //***********************************************************************************************************
+    //Напишите программу, которая считывает переменные a и b типа Int и выводит:
+    //-Минимальное из них, если их сумма делится на 2 без остатка
+    //-Иначе - максимальное из них
+//    var a = scan.nextInt()
+//    var b = scan.nextInt()
+//    var c = a + b
+//    if (c%2 == 0) print (Math.min(a, b))
+//    else print (Math.max(a, b))
+
+    //***********************************************************************************************************
+    //***********************************************************************************************************
+    //***********************************************************************************************************
+    //***********************************************************************************************************
+    //***********************************************************************************************************
     //***********************************************************************************************************
 
 }
