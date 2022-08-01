@@ -3,13 +3,13 @@ import java.lang.System.out
 
 
 fun main () {
-    val file = File("./src/input.txt")
+    val file = File("./src/yandex/input.txt")
     val inLine = file.bufferedReader().readLine() //прочитали файл
 
     val a = inLine.substringBefore(" ").toInt() //взяли первое значение по индксу
     val b = inLine.substringAfter(" ").toInt()
     val result = a + b
-    val outLine = File("./src/output.txt")
+    val outLine = File("./src/yandex/output.txt")
     outLine.writeText(result.toString()) //записали в файл
     println("ну здарсте")
 }
